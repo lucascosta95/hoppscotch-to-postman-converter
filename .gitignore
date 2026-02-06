@@ -28,7 +28,3 @@ lerna-debug.log*
 # OS junk
 .DS_Store
 Thumbs.db
-
-# Project exports/conversions
-hoppscotch_exported_files/
-postman_converted_files/
