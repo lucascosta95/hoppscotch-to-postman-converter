@@ -60,7 +60,6 @@ try {
     process.exit(1);
 }
 
-// Test Body Conversion (String Body & Root Requests)
 try {
     console.log('Testing Advanced Collection Conversion...');
     const ADVANCED_FILE = path.join(EXPORTED_FILES_DIR, 'advanced_test.json');
@@ -89,8 +88,7 @@ try {
     assert.strictEqual(result.item[0].request?.body?.raw, '{"foo":"bar"}');
     
     console.log('✅ Advanced Collection Conversion Passed');
-    
-    // Cleanup
+
     fs.unlinkSync(ADVANCED_FILE);
 } catch (error) {
     console.error('❌ Advanced Collection Conversion Failed:', error);
